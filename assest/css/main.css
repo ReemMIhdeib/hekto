@@ -1,8 +1,8 @@
 
-
+/* start header*/
 /* start header*/
 .header{
-     width: 90%;
+    width: 100%;
     position: fixed;
     top: 0px;
 }
@@ -24,14 +24,14 @@
 }
 .list ul a {
  color: var(--textcolor);
-transition: color 1.1s ,  background-color 1.1s;
+transition: color 1.1s ;
    
     
 }
 
  .list  a:hover {
     color: var(--colorbackgroundlabel);
-    background-color: var(--textcolor);
+   
 }
 .research form , .footer form {
     display: flex;
@@ -127,12 +127,81 @@ transition: color 1.1s ,  background-color 1.1s;
     }
 }
 /*end header*/
+
+/*start ourNews*/
+ .ourNews .container .row {
+
+    background-repeat: no-repeat;
+    height: 30vh ;
+    background-size: 100%;
+    background-image : url(./../image/Rectangle\ 102.png );
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   text-transform:capitalize ;
+   color: var(--titlecolor);
+   font-family: 'Courier New', Courier, monospace;
+ }
+.ourNews .container .btn{
+    width: 15%;
+    padding: 12px 0px;
+    color: var(--colorborder);
+}
+
+@media screen and (min-width:320px) and (max-width:435px){
+  .container{
+        width: 100% ;
+    }
+    .ourNews .container .row {
+        background-repeat: repeat;
+        flex-direction: column;
+        height: 40vh ;
+        background-size: 100%;
+        gap: 10px;
+        align-items: center;
+       justify-content: center;
+        font-size: 10px ;
+        
+    }
+    .ourNews .container .btn{
+       
+      font-size: 10px;
+     
+    color: var(--colorborder);
+    }
+}
+
+@media screen and (min-width:436px) and (max-width:640px){
+  .container{
+        width: 100% ;
+    }
+    .ourNews .container .row {
+        flex-direction: row;
+        height: 20vh ;
+        
+        background-size: 100%;
+        gap: 15px;
+        font-size: 10px ;
+        
+    }
+    .ourNews .container .btn{
+       
+      font-size: 10px;
+
+    color: var(--colorborder);
+    }
+}
+/*end ourNews*/
+
 /*start footer*/
    .footer .icon_item{
      display: none;
 }
 
 .footer .row {
+    width: 100%;
     background-color: #EEEFFB;
      align-items: flex-start;
      justify-content: space-between;
@@ -176,80 +245,50 @@ gap: 10px;
     color: #8A8FB9;
 }
 
-@media screen and (min-width:300px) and (max-width:633px){
-     .container{
+@media screen and (min-width:300px) and (max-width:552px){
+  .container{
         width: 100% ;
     }
-    .footer  .container .row {
-        width: 100%;
-        font-size: 40%;
-        
-        gap:10px;
+    .footer  .container .row { 
+         width: 100%;
         display: flex;
        flex-wrap: wrap;
-      flex-direction: column;
-        justify-content: flex-start;
-     }
-     .footer .footer_left .logo{
-        width: 10px;
-     }
-     .footer .footer_right{
-        flex-wrap: wrap;
-     }
+       font-size: 10px;
+        
+        }
+        
+        .footer .footer_right .footer_item{
+            
+             display: flex;
+             flex-wrap: wrap;
+            flex-direction: row;
+            gap: 2px;
 
-    .footer form input{
+}
+        .footer form input{
         display: none;
      }
-    }
-
-@media screen and (min-width:634px) and (max-width:800px){
-     .container{
+     .footer .list_item{
+        display: none;
+     }
+        .footer .icon_item{
+         display: block;
+     }
+}
+@media screen and (min-width:552px) and (max-width:788px){
+  .container{
         width: 100% ;
     }
-    .footer  .container .row {
-        width: 100%;
-        font-size: 60%;
-        flex-wrap: wrap;
-        gap:10px;
-        justify-content: flex-start;
-     }
-
-    .footer form input{
-        display: none;
-     }
+    .footer  .container .row { 
+         width: 100%;
+        font-size: 10px;
+        
+        gap: 8px;
+        display: flex;
+       flex-wrap: wrap;
+      
      
-}
-
-@media screen and (min-width:770px) and (max-width:800px){
-     .container{
-        width: 100% ;
     }
-    .footer  .container .row {
-        width: 100%;
-        font-size: xx-small;
-        align-items: start;
-     }
-     .footer form input{
-        display: none;
-     }
+
 }
-@media screen and (min-width:801px) and (max-width:1007px){
-     .footer  .container .row {
-        width: 100%;
-        font-size: x-small;
-     }
-    
-}
-
-@media screen and (min-width:1008px) and (max-width:1077px){
-      .footer  .container .row {
-        width: 100%;
-        font-size: small;
-     }
-     
-  
-}
-
-
-
 /*end footer*/

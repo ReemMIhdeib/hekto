@@ -8,10 +8,10 @@ html{
     --colorbackgroundlabel:#FB2E86;
     --colorborder:#E7E6EF;
     --textcolor:#0D0E43;
+    --titlecolor:#151875;
 }
 body{
-    padding: 100px;
-    height: 6000px;
+    padding-top: 100px ;
     background-color: #F5F5F5;
 }
 a{
@@ -22,7 +22,7 @@ ul{
     list-style-type:none;
 }
 .container {
-width: 70%;
+width: 80%;
 padding: 0  50px;
 max-width: 1400px;
 margin: 0 auto;
@@ -41,3 +41,5 @@ margin: 0 auto;
     background-color: var(--colorbackgroundlabel);
 }
 /*end public*/
+
+/* start header*/
