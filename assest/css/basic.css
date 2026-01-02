@@ -40,6 +40,9 @@ margin: 0 auto;
     border: none;
     background-color: var(--colorbackgroundlabel);
 }
+h1 , h2 , h3 , h4 ,h5 {
+    text-transform: capitalize;
+}
 /*end public*/
 
 /* start header*/
