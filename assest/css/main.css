@@ -155,10 +155,10 @@ color: #8A8FB9;
     padding: 16px;
 }
 
-@media screen and (min-width:320px) and (max-width:1100px){
+@media screen and (min-width:530px) and (max-width:1100px){
     .hero .row{
     width: 100%;
-    background-color:  #F2F0FF;
+background-color:  #F2F0FF;
     padding: 20px;
     flex-direction: column;
     gap: 8px;
@@ -166,8 +166,10 @@ color: #8A8FB9;
 .hero .heroInfo .row{
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
+    
+    gap: 2px;
 font-size: 13px;
+padding: 0px;
 }
 .hero .heroInfo p{
 
@@ -175,13 +177,40 @@ font-size: 10px;
 }
 .hero .heroImg .img
   { 
-     width: 30%;
+     width: 20%;
     height: auto;
    
    
    }
 }
 
+@media screen and (min-width:320px) and (max-width:530px){
+    .hero .row{
+    width: 100%;
+   background-color:  #F2F0FF;
+    padding: 22;
+    flex-direction: column;
+    gap: 8px;
+}
+.hero .heroInfo .row{
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 2px;
+font-size: 8px;
+padding: 0px;
+}
+.hero .heroInfo p{
+
+font-size: 8px;
+}
+.hero .heroImg .imgg
+  { text-align: start;
+     height: 300px;
+    width: 200px;
+   
+   }
+}
 /* end hero*/
 /*start product*/
  .products{
