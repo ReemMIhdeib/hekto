@@ -336,6 +336,16 @@ border-bottom: solid #EEEFFB;
 }
 
 /*end hover*/
+
+@media screen and (min-width:743px) and (max-width:1080px){
+.Lproduct-item  .Lproduct .row 
+  
+  { flex-wrap: wrap;
+   
+   gap :18px;
+   }
+}
+
 /* end Leatest-Products*/
 /*start Trending-Product*/
  .Tproduct-item  .Tproduct .row {
@@ -345,6 +355,7 @@ border-bottom: solid #EEEFFB;
  gap: 0;
  padding: 0px;
 }
+
  .Tproduct-item  .Tproduct-img {
      background-color: #EEEFFB;
     height: 200px;
@@ -361,7 +372,7 @@ border-bottom: solid #EEEFFB;
     
      background-color: #F6F7FB;
      flex-direction: column;
-     gap: 7px;
+     gap: 5px;
     align-items:center ;
     justify-content: center;
     padding: 11px 39px;
@@ -386,6 +397,18 @@ font-size: 16px;
 
 
 }
+
+@media screen and (min-width:566px) and (max-width:1150px){
+.Trending-Product .Tproduct-item .row 
+   
+  {
+     flex-wrap: wrap;
+       gap :50px;
+       margin-right: 30px;
+       padding: 0px;
+   }
+}
+
 
 /* end Trending-Product*/
 /*end product*/
@@ -420,10 +443,10 @@ font-size: 16px;
         flex-direction: column;
         height: 30vh ;
         background-size: 100%;
-        gap: 10px;
+        gap: 7px;
         align-items: center;
        justify-content: center;
-        font-size: 10px ;
+        font-size: 8px ;
         
     }
     .ourNews .container .btn{
@@ -457,9 +480,7 @@ font-size: 16px;
 /*end ourNews*/
 
 /*start footer*/
-   .footer .icon_item{
-     display: none;
-}
+
 
 .footer .row {
     width: 100%;
@@ -507,7 +528,7 @@ gap: 10px;
     color: #8A8FB9;
 }
 
-@media screen and (max-width:552px){
+@media screen and (max-width:788px){
   .container{
         width: 100% ;
     }
@@ -515,8 +536,11 @@ gap: 10px;
          width: 100%;
         display: flex;
        flex-wrap: wrap;
+         flex-direction: column;
+        gap: 20px;
+       align-items: flex-start ;
+      justify-content: flex-start ;
        
-       font-size: 10px;
         
         }
         
@@ -524,34 +548,14 @@ gap: 10px;
             
              display: flex;
              flex-wrap: wrap;
-            flex-direction: row;
-            gap: 2px;
-
-}
-        .footer form input{
-        display: none;
-     }
-     .footer .list_item{
-        display: none;
-     }
-        .footer .icon_item{
-         display: block;
-     }
-}
-@media screen and (min-width:552px) and (max-width:788px){
-  .container{
-        width: 100% ;
-    }
-    .footer  .container .row { 
-         width: 100%;
-        font-size: 10px;
-        
+             flex-direction: column;
         gap: 8px;
-        display: flex;
-       flex-wrap: wrap;
-      
-     
-    }
-
+       align-items: flex-start ;
+      justify-content: flex-start ;
+       
+           
 }
+     
+}
+
 /*end footer*/
